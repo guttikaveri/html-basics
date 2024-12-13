@@ -1,0 +1,210 @@
+HTML tags can be categorized based on their functionality, structure, and purpose. 
+1. Structural Tags
+These define the basic structure of an HTML document.  
+Ex:
+
+<!DOCTYPE html>  <!-- Declares the document type -->
+<html>            <!-- Root element of the HTML document -->
+<head>            <!-- Contains metadata and links -->
+<body>            <!-- Contains the main content -->
+
+---------------------------------------------------------------------------------------------------------------
+2. Semantic Tags
+These tags clearly define the purpose and meaning of the content they contain, improving accessibility and readability.  
+
+Ex:
+<header>   <!-- Represents the header section -->
+<nav>      <!-- Defines navigation links -->
+<article>  <!-- Represents a standalone article -->
+<section>  <!-- Represents a section of content -->
+<footer>   <!-- Represents the footer section -->
+<aside>    <!-- Contains sidebar or related content -->
+<main>     <!-- Represents the main content of the document -->
+-------------------------------------------------------------------------------------------------------------------
+3. Content Tags
+These tags are used to define and format the content visible on the webpage.  
+Ex:
+Headings:
+  <h1> to <h6> <!-- Headings from most important to least important -->
+Paragraph:
+  
+  <p>This is a paragraph.</p>
+  
+Span:
+  <span>Inline content</span>
+ 
+----------------------------------------------------------------------------------------------------------------
+4. Media Tags
+These are used to embed images, audio, and video into a webpage.  
+
+Ex:
+
+<img src="image.jpg" alt="Image description">  <!-- Embeds an image -->
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>                                        <!-- Embeds audio -->
+<video controls>
+    <source src="video.mp4" type="video/mp4">
+</video>                                       <!-- Embeds video -->
+----------------------------------------------------------------------------------------------------------------
+5. Interactive Tags
+These tags create interactive elements like links, buttons, and form controls.  
+
+Ex:
+<a href="https://example.com">Link</a>  <!-- Creates a hyperlink -->
+<button>Click Me</button>              <!-- Creates a button -->
+<input type="text">                    <!-- Creates an input field -->
+<select>                               <!-- Dropdown menu -->
+    <option>Option 1</option>
+    <option>Option 2</option>
+</select>
+---------------------------------------------------------------------------------------------------------------
+6. Deprecated Tags
+These tags are no longer recommended and are replaced by modern, semantic alternatives.  
+Ex:
+- `<font>` (Use CSS instead)
+- `<center>` (Use CSS instead)
+- `<b>` and `<i>` (Use `<strong>` and `<em>` instead for semantic meaning)
+-------------------------------------------------------------------------------------------------------------
+7. Empty (Void) Tags**
+Void tags don’t have closing tags and are self-contained.  
+
+Ex:
+
+<img src="image.jpg" alt="Image description">
+<br> <!-- Line break -->
+<hr> <!-- horizantal line-->
+------------------------------------------------------------------------------------------------------------------
+8. lists:
+ types of lists: thre are three types of lists in html they are:
+  1. ordered list(ol): Displays items in a specific order, by default  it isnumbered.
+    Ex : <ol type="A">
+    <li>Item A</li>
+    <li>Item B</li>
+</ol>
+
+<ol start="5">
+    <li>Item 5</li>
+    <li>Item 6</li>
+</ol>
+
+
+  2. unordered list and(ul) :Displays items without any specific order, using bullets.
+   Ex:<ul type="circle">
+    <li>Circle Item</li>
+    <li>Circle Item</li>
+</ul>
+
+  3.  definition list(dl):Used for creating a list of terms and their definitions.
+       Ex: dt - definition term
+           dd- definition description
+                  
+            <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets</dd>
+</dl>
+---------------------------------------------------------------------------------------------------------
+9. form:
+<fieldset>, <legend> ,<label>,<input> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete HTML Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first_name" required placeholder="John">
+            <br><br>
+            
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last_name" required placeholder="Doe">
+            <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="1234567890">
+            <br><br>
+            
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob">
+            <br><br>
+            
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <br><br>
+        </fieldset>
+        
+        <!-- Preferences Section -->
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="hobbies">Hobbies:</label><br>
+            <input type="checkbox" id="reading" name="hobbies" value="reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" id="sports" name="hobbies" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="hobbies" value="music">
+            <label for="music">Music</label>
+            <br><br>
+            
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="india">India</option>
+            </select>
+            <br><br>
+            
+            <label for="bio">Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="40" placeholder="Tell us about yourself..."></textarea>
+            <br><br>
+        </fieldset>
+        
+        <!-- Account Information Section -->
+        <fieldset>
+            <legend>Account Information</legend>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="6" required>
+            <br><br>
+            
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm_password" minlength="6" required>
+            <br><br>
+        </fieldset>
+        
+        <!-- File Upload -->
+        <label for="profile-pic">Profile Picture:</label>
+        <input type="file" id="profile-pic" name="profile_pic">
+        <br><br>
+        
+        <!-- Submit and Reset Buttons -->
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
+------------------------------------------------------------------------------------------------------------
+10. table :
+<table>
+<thead>
+<tr>
+<th>

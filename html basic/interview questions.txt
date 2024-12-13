@@ -1,0 +1,61 @@
+1. what is html?
+A. html  is a hypertext markup language used to dispaly the content of the  webpage with the help of tags and 
+   elements .
+ --------------------------------------------------------------------------------------------------------  
+2. what is  markup language?
+A. In html markup gives the  basic content on the webpage .
+-----------------------------------------------------------------------------------------------------
+3. what is hyper text?
+A.  the name it tells that it will high light the text  and helps to navigate  to the another webpage with the help of 
+    atag, href .
+--------------------------------------------------------------------------------------------------------------
+4. difference between div and span ?
+A.  div:The <div> tag  is a block-level container used to group elements for styling or layout purposes.
+    span :The <span> tag is an inline container used to apply styles to a small portion of text or content
+     within a document.
+------------------------------------------------------------------------------------------------------
+
+5.  what are self closing tags?
+A.  self closing tags are also called as  empty tags  because it does not have any content  between and there is no
+    is no seperate closing tag for these tags.
+       ex. br , hr , img  etc
+
+------------------------------------------------------------------------------------------------------------
+6. difference between inline and block elements?
+A. inline : Inline elements do not start on a new line and only take up as much width as necessary. 
+   They are typically used to style or format small parts of a document, 
+   ex: <span>, <a>, <strong>, and <em>.
+
+   block: Block-level elements are elements that start on a new line and take up the full width of their 
+    parent container by default. 
+    Examples include <div>, <p>, <h1> to <h6>, <section>, and <article>.
+    ---------------------------------------------------------------------------------------------------------
+
+7. what are semantic tags?
+A. Semantic elements clearly define their purpose in the structure of a web page and hey improve accessibility, SEO, and code readability
+     for both  users and webpage.
+      ex. <header>, <footer>,  <section>,  <main> .
+---------------------------------------------------------------------------------------------------------
+
+8.  difference betweeen tags and elements?
+A.  tags: HTML tags are used to define the start and end of an element. They are enclosed within angle brackets, e.g., <p> for paragraphs.
+    elements:   An HTML element is defined by a start tag, some content, and an end tag..
+----------------------------------------------------------------------------------------------------------------
+9. what are  attributes?
+A.  attributes can be applied to any HTML element that provides additional about the tag,
+ e.g., id, class, style, and title.
+ --------------------------------------------------------------------------------------------------------------
+
+ 10.  what is the main purpose of label tag?
+ A. The <label> tag in HTML is used to define a label for an input element in a form. 
+ Its primary purpose is to improve the usability and accessibility of forms by associating descriptive text with form controls,
+  such as input fields, checkboxes, radio buttons, etc.
+------------------------------------------------------------------------------------------------------------
+11.  difference b/w  em and strong? why should  you choose them over B and i tags?
+ A.
+A.  both  em and strong tags  are used  for styling the text  in html 
+
+---------------------------------------------------------------------------------------------------------
+12. what  is the use of action  attribute in form tag?
+A. The action attribute in the <form> tag specifies the URL or endpoint where the form data should be sent when the user submits the form
+
